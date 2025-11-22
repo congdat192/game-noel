@@ -1,0 +1,122 @@
+.results-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.results-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeInScale 0.4s ease-out;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.results-card h2 {
+  font-size: 2.5rem;
+  color: #c73b3b;
+  margin-top: 0;
+}
+
+.final-score {
+  font-size: 1.5rem;
+  color: #555;
+}
+.final-score span {
+  font-weight: bold;
+  color: #2a8a46;
+}
+
+.voucher-section {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.voucher-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.voucher-code-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9ecef;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+.voucher-code-wrapper span {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #c73b3b;
+}
+.voucher-code-wrapper button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  min-width: 80px;
+}
+
+.email-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.email-form input {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+.email-form button {
+  white-space: nowrap;
+}
+
+.email-success {
+  color: #2a8a46;
+  font-weight: bold;
+}
+
+.no-voucher {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 2rem 0;
+}
+
+.results-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.results-actions .play-again-btn {
+  flex: 1;
+  background-color: #2a8a46;
+}
+.results-actions .share-btn {
+  flex: 1;
+  background-color: #0d6efd; /* Social Blue */
+}

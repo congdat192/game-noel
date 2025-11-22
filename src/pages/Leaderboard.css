@@ -1,0 +1,91 @@
+.leaderboard-container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}
+
+.prizes-section {
+  background: linear-gradient(135deg, #2a8a46, #33a556);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.prizes-section h3 {
+  margin-top: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 0.5rem;
+}
+.prizes-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.leaderboard-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  background: #f1f1f1;
+}
+.tabs button {
+  flex: 1;
+  padding: 1rem 0.5rem;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.tabs button.active {
+  color: #2a8a46;
+  border-bottom-color: #2a8a46;
+}
+
+.leaderboard-list {
+  padding: 1rem;
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+.leaderboard-row:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-row:nth-child(1) .rank,
+.leaderboard-row:nth-child(2) .rank,
+.leaderboard-row:nth-child(3) .rank {
+  font-weight: bold;
+  color: #c73b3b;
+}
+
+.rank {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+  width: 40px;
+  text-align: center;
+}
+.name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 1rem;
+}
+.score {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2a8a46;
+}

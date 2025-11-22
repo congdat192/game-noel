@@ -1,0 +1,32 @@
+{
+  "gameSettings": {
+    "playDurationSeconds": 20,
+    "dailyFreePlays": 1,
+    "maxBonusPlaysPerDay": 2
+  },
+  "voucherTiers": [
+    { "minScore": 80, "value": "50K", "daysValid": 7 },
+    { "minScore": 120, "value": "100K", "daysValid": 7 },
+    { "minScore": 180, "value": "150K", "daysValid": 7 }
+  ],
+  "campaigns": [
+    {
+      "id": "noel_2025",
+      "name": "Chiến dịch Giáng Sinh 2025",
+      "startDate": "2025-12-01T00:00:00+07:00",
+      "endDate": "2025-12-31T23:59:59+07:00",
+      "prizes": {
+        "weekly": [
+          { "rank": 1, "reward": "Giải Nhất Tuần - Quà tặng A" },
+          { "rank": 2, "reward": "Giải Nhì Tuần - Quà tặng B" },
+          { "rank": 3, "reward": "Giải Ba Tuần - Quà tặng C" }
+        ],
+        "campaign": [
+          { "rank": 1, "reward": "Giải Nhất Chung Cuộc - Quà tặng X" },
+          { "rank": 2, "reward": "Giải Nhì Chung Cuộc - Quà tặng Y" },
+          { "rank": 3, "reward": "Giải Ba Chung Cuộc - Quà tặng Z" }
+        ]
+      }
+    }
+  ]
+}
